@@ -1,5 +1,3 @@
-<!-- index.html remains unchanged -->
-<!-- Now creating portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,71 +19,43 @@
     </nav>
   </header>
 
-  <main class="portfolio">
-    <h1 class="center-title">My Portfolio</h1>
-    <div class="portfolio-grid">
-      <div class="project-box">
-        <img src="assets/thumb1.jpg" alt="Project 1">
-        <h3>3D Model Showcase</h3>
+  <main class="portfolio-layout">
+    <aside class="sidebar">
+      <h2>PORTFOLIO</h2>
+      <ul class="category-list">
+        <li><a href="#">3D Models</a></li>
+        <li><a href="#">Graphic Designs</a></li>
+        <li><a href="#">Illustrations</a></li>
+        <li><a href="#">Animations</a></li>
+      </ul>
+    </aside>
+
+    <section class="portfolio-section">
+      <h1 class="center-title">PORTFOLIO</h1>
+      <div class="portfolio-grid">
+        <div class="project-box">
+          <img src="assets/helmet.png" alt="3D Models">
+          <h3>3D MODELS</h3>
+        </div>
+        <div class="project-box">
+          <img src="assets/swirl.png" alt="Animation">
+          <h3>ANIMATION</h3>
+        </div>
+        <div class="project-box">
+          <img src="assets/graphic.png" alt="Graphic Design">
+          <h3>GRAPHIC DESIGN</h3>
+        </div>
+        <div class="project-box">
+          <img src="assets/rocket.png" alt="Illustration">
+          <h3>ILLUSTRATION</h3>
+        </div>
       </div>
-      <div class="project-box">
-        <img src="assets/thumb2.jpg" alt="Project 2">
-        <h3>Animation Demo</h3>
-      </div>
-      <div class="project-box">
-        <img src="assets/thumb3.jpg" alt="Project 3">
-        <h3>Graphic Design</h3>
-      </div>
-      <div class="project-box">
-        <img src="assets/thumb4.jpg" alt="Project 4">
-        <h3>Concept Art</h3>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 John Motion. All rights reserved.</p>
   </footer>
-
-  <style>
-    .portfolio {
-      padding: 4em 2em;
-    }
-
-    .center-title {
-      text-align: center;
-      font-size: 2.5em;
-      color: #00bfa6;
-      margin-bottom: 2em;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2em;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .project-box {
-      background-color: #2a2a2a;
-      border: 1px solid #00bfa6;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      padding: 1em;
-    }
-
-    .project-box img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
-    .project-box h3 {
-      margin-top: 0.5em;
-      color: #fff;
-    }
-  </style>
 </body>
 </html>
+

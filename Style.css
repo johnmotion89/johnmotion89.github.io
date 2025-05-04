@@ -1,5 +1,7 @@
 /* style.css */
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Great+Vibes&display=swap');
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -17,10 +19,11 @@ nav {
 }
 
 .logo {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: #fff;
-  font-family: 'Georgia', serif;
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #00bfa6;
+  font-family: 'Great Vibes', cursive;
+  letter-spacing: 1px;
 }
 
 nav ul {
@@ -50,6 +53,7 @@ nav ul li a.active {
 .hero h1 {
   font-size: 3em;
   margin-bottom: 0.2em;
+  font-family: 'Playfair Display', serif;
 }
 
 .hero h2 {
@@ -86,17 +90,58 @@ footer {
 .center-title {
   text-align: center;
   font-size: 2.5em;
-  color: #00bfa6;
+  color: #f4f4f4;
   margin-bottom: 2em;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Portfolio Layout */
+.portfolio-layout {
+  display: flex;
+  padding: 4em 2em;
+  gap: 2em;
+}
+
+.sidebar {
+  width: 200px;
+  padding-right: 2em;
+  border-right: 1px solid #333;
+}
+
+.sidebar h2 {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-list li {
+  margin-bottom: 1em;
+}
+
+.category-list li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.category-list li a:hover {
+  color: #00bfa6;
+}
+
+.portfolio-section {
+  flex: 1;
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2em;
 }
 
 .project-box {
@@ -112,13 +157,18 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 4px;
+  margin-bottom: 0.5em;
 }
 
 .project-box h3 {
-  margin-top: 0.5em;
   color: #fff;
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.1em;
+  font-family: 'Playfair Display', serif;
 }
 
+/* Blog & Contact */
 .blog {
   padding: 4em 2em;
   max-width: 900px;
@@ -141,6 +191,7 @@ footer {
 .blog-post h2 {
   margin: 0 0 0.5em;
   color: #fff;
+  font-family: 'Playfair Display', serif;
 }
 
 .date {
