@@ -1,12 +1,92 @@
-<!-- index.html remains unchanged -->
-<!-- Now creating portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JM | Portfolio</title>
+  <title>JM Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1c1c1c;
+      color: #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1em 2em;
+      background-color: #121212;
+      border-bottom: 2px solid #00bfa6; /* teal */
+    }
+
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+      font-family: 'Georgia', serif;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5em;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    nav ul li a:hover {
+      color: #00bfa6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5em 2em;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    .hero h2 {
+      color: #00bfa6;
+      font-weight: 400;
+      margin-bottom: 2em;
+    }
+
+    .work-categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .work-box {
+      background-color: #2a2a2a;
+      border: 1px solid #00bfa6;
+      padding: 2em;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #121212;
+      border-top: 1px solid #444;
+      color: #aaa;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,78 +94,28 @@
       <div class="logo">JM</div>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main class="portfolio">
-    <h1 class="center-title">My Portfolio</h1>
-    <div class="portfolio-grid">
-      <div class="project-box">
-        <img src="assets/thumb1.jpg" alt="Project 1">
-        <h3>3D Model Showcase</h3>
+  <main>
+    <section class="hero">
+      <h1>John Motion</h1>
+      <h2>3D Modeler & Graphic Designer</h2>
+      <div class="work-categories">
+        <div class="work-box">3D Modeling</div>
+        <div class="work-box">Graphic Design</div>
+        <div class="work-box">Animation</div>
+        <div class="work-box">Illustration</div>
       </div>
-      <div class="project-box">
-        <img src="assets/thumb2.jpg" alt="Project 2">
-        <h3>Animation Demo</h3>
-      </div>
-      <div class="project-box">
-        <img src="assets/thumb3.jpg" alt="Project 3">
-        <h3>Graphic Design</h3>
-      </div>
-      <div class="project-box">
-        <img src="assets/thumb4.jpg" alt="Project 4">
-        <h3>Concept Art</h3>
-      </div>
-    </div>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 John Motion. All rights reserved.</p>
   </footer>
-
-  <style>
-    .portfolio {
-      padding: 4em 2em;
-    }
-
-    .center-title {
-      text-align: center;
-      font-size: 2.5em;
-      color: #00bfa6;
-      margin-bottom: 2em;
-    }
-
-    .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 2em;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .project-box {
-      background-color: #2a2a2a;
-      border: 1px solid #00bfa6;
-      border-radius: 8px;
-      overflow: hidden;
-      text-align: center;
-      padding: 1em;
-    }
-
-    .project-box img {
-      width: 100%;
-      height: auto;
-      border-radius: 4px;
-    }
-
-    .project-box h3 {
-      margin-top: 0.5em;
-      color: #fff;
-    }
-  </style>
 </body>
 </html>
