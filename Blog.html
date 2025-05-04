@@ -1,0 +1,84 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM | Blog</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">JM</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog">
+    <h1 class="center-title">Progress Blog</h1>
+    <div class="blog-container">
+      <article class="blog-post">
+        <h2>Re-texturing My Sci-Fi Drone Model</h2>
+        <p class="date">May 3, 2025</p>
+        <p>This week I updated my drone model with procedural textures and baked lighting. The look is now far more dynamic under different HDRIs.</p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+      <article class="blog-post">
+        <h2>New Animation Reel Setup</h2>
+        <p class="date">April 27, 2025</p>
+        <p>I’ve begun compositing my animation sequences for a 2025 showreel using DaVinci Resolve. Expect motion graphics overlays and synced sound design.</p>
+        <a href="#" class="read-more">Read more</a>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 John Motion. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .blog {
+      padding: 4em 2em;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .blog-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+    }
+
+    .blog-post {
+      background-color: #2a2a2a;
+      padding: 2em;
+      border-left: 4px solid #00bfa6;
+      border-radius: 6px;
+    }
+
+    .blog-post h2 {
+      margin: 0 0 0.5em;
+      color: #fff;
+    }
+
+    .date {
+      font-size: 0.9em;
+      color: #aaa;
+      margin-bottom: 1em;
+    }
+
+    .read-more {
+      display: inline-block;
+      margin-top: 1em;
+      color: #00bfa6;
+      text-decoration: underline;
+    }
+  </style>
+</body>
+</html>

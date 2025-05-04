@@ -1,0 +1,85 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">JM</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact">
+    <h1 class="center-title">Get In Touch</h1>
+    <form class="contact-form" action="mailto:your@email.com" method="post" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 John Motion. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .contact {
+      padding: 4em 2em;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+
+    label {
+      font-weight: bold;
+      color: #fff;
+    }
+
+    input, textarea {
+      padding: 0.8em;
+      border-radius: 4px;
+      border: none;
+      background-color: #2a2a2a;
+      color: #fff;
+      border-left: 4px solid #00bfa6;
+    }
+
+    button {
+      background-color: #00bfa6;
+      color: #121212;
+      border: none;
+      padding: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #00d8c0;
+    }
+  </style>
+</body>
+</html>
