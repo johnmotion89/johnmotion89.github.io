@@ -1,0 +1,91 @@
+<!-- index.html remains unchanged -->
+<!-- Now creating portfolio.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JM | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">JM</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portfolio">
+    <h1 class="center-title">My Portfolio</h1>
+    <div class="portfolio-grid">
+      <div class="project-box">
+        <img src="assets/thumb1.jpg" alt="Project 1">
+        <h3>3D Model Showcase</h3>
+      </div>
+      <div class="project-box">
+        <img src="assets/thumb2.jpg" alt="Project 2">
+        <h3>Animation Demo</h3>
+      </div>
+      <div class="project-box">
+        <img src="assets/thumb3.jpg" alt="Project 3">
+        <h3>Graphic Design</h3>
+      </div>
+      <div class="project-box">
+        <img src="assets/thumb4.jpg" alt="Project 4">
+        <h3>Concept Art</h3>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 John Motion. All rights reserved.</p>
+  </footer>
+
+  <style>
+    .portfolio {
+      padding: 4em 2em;
+    }
+
+    .center-title {
+      text-align: center;
+      font-size: 2.5em;
+      color: #00bfa6;
+      margin-bottom: 2em;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2em;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .project-box {
+      background-color: #2a2a2a;
+      border: 1px solid #00bfa6;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      padding: 1em;
+    }
+
+    .project-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .project-box h3 {
+      margin-top: 0.5em;
+      color: #fff;
+    }
+  </style>
+</body>
+</html>
