@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JM Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>John Motion | 3D Generalist</title>
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico">
-  <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+
+  <!-- Background Slideshow -->
+  <div class="background-slideshow">
+    <div class="slide" style="background-image: url('assets/Lightning_Sword/Final%20render_Done.png');"></div>
+    <div class="slide" style="background-image: url('assets/Fire_Hydrant/Final%20renders.png');"></div>
+    <div class="slide" style="background-image: url('assets/Medieval_Axe/1.jpg');"></div>
+    <div class="slide" style="background-image: url('assets/Music_Mechanic/Final_highres02.png');"></div>
+    <div class="slide" style="background-image: url('assets/Steampunk_revolver/Revolver.png');"></div>
+    <div class="slide" style="background-image: url('assets/Poster_Art_Miami/Final_Product_WIP copy.png');"></div>
+  </div>
+  <div class="background-overlay"></div>
+
+  <!-- Navbar -->
   <header>
     <nav>
       <div class="logo">JM</div>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -22,56 +33,105 @@
     </nav>
   </header>
 
-  <main>
-
-  <section class="hero">
+  <main class="services">
     <h1>John Motion</h1>
-    <h2>3D Generalist, Animator & Graphic Designer</h2>
-    <p style="max-width: 750px; margin: 1em auto; font-size: 1.1em;">
-      I'm a creative all-rounder with expertise across 2D and 3D design, animation, branding, visual effects, and storytelling. I help clients turn bold ideas into polished visual assets, whether for games, film, brand identity, or digital content.
+    <h2 class="subtitle">3D Generalist, Animator & Graphic Designer</h2>
+    <p class="intro">
+      I'm a creative all-rounder with expertise in 2D and 3D design, animation, branding, visual effects, and storytelling. I help clients turn bold ideas into polished visual assets—whether for games, film, branding, or digital content.
     </p>
 
-    <div class="work-categories">
+    <!-- Services Sections -->
+    <div class="service-group">
       <h3>🎨 Graphic Design & Branding</h3>
-      <div class="work-box">Logo Design</div>
-      <div class="work-box">Corporate Identity</div>
-      <div class="work-box">Pamphlets & Brochures</div>
-      <div class="work-box">Banners & Posters</div>
-      <div class="work-box">Social Media Graphics</div>
-      <div class="work-box">Typography Layouts</div>
-
-      <h3>🛠️ 3D Modeling & Environment Art</h3>
-      <div class="work-box">Hard Surface Modeling</div>
-      <div class="work-box">Character Modeling</div>
-      <div class="work-box">Environment Design</div>
-      <div class="work-box">UV Mapping & Texturing</div>
-      <div class="work-box">Low Poly / Game Assets</div>
-      <div class="work-box">Prop Modeling</div>
-
-      <h3>🎬 Animation & Motion</h3>
-      <div class="work-box">3D Animation</div>
-      <div class="work-box">2D Animation</div>
-      <div class="work-box">Character Rigging</div>
-      <div class="work-box">VFX & Simulation</div>
-      <div class="work-box">Video Editing</div>
-      <div class="work-box">Motion Graphics</div>
-
-      <h3>📚 Illustration & Storytelling</h3>
-      <div class="work-box">Concept Art</div>
-      <div class="work-box">Comic Book Illustration</div>
-      <div class="work-box">Visual Development</div>
-      <div class="work-box">Children's Book Art</div>
-      <div class="work-box">Character Design</div>
-
-      <h3>🧠 Additional Creative Services</h3>
-      <div class="work-box">UI/UX Prototyping</div>
-      <div class="work-box">Storyboarding</div>
-      <div class="work-box">3D Product Visualization</div>
-      <div class="work-box">Game Asset Pipelines</div>
-      <div class="work-box">Style Frame Design</div>
+      <div class="service-grid">
+        <div class="service-item">Logo Design</div>
+        <div class="service-item">Corporate Identity</div>
+        <div class="service-item">Pamphlets & Brochures</div>
+        <div class="service-item">Banners & Posters</div>
+        <div class="service-item">Social Media Graphics</div>
+        <div class="service-item">Typography Layouts</div>
+      </div>
     </div>
-  </section>
-</main>
+
+    <div class="service-group">
+      <h3>🛠️ 3D Modeling & Environment Art</h3>
+      <div class="service-grid">
+        <div class="service-item">Hard Surface Modeling</div>
+        <div class="service-item">Character Modeling</div>
+        <div class="service-item">Environment Design</div>
+        <div class="service-item">UV Mapping & Texturing</div>
+        <div class="service-item">Low Poly / Game Assets</div>
+        <div class="service-item">Prop Modeling</div>
+      </div>
+    </div>
+
+    <div class="service-group">
+      <h3>🎞️ Animation & Motion</h3>
+      <div class="service-grid">
+        <div class="service-item">3D Animation</div>
+        <div class="service-item">2D Animation</div>
+        <div class="service-item">Character Rigging</div>
+        <div class="service-item">VFX & Simulation</div>
+        <div class="service-item">Video Editing</div>
+        <div class="service-item">Motion Graphics</div>
+      </div>
+    </div>
+
+    <div class="service-group">
+      <h3>📚 Illustration & Storytelling</h3>
+      <div class="service-grid">
+        <div class="service-item">Concept Art</div>
+        <div class="service-item">Comic Book Illustration</div>
+        <div class="service-item">Visual Development</div>
+        <div class="service-item">Children’s Book Art</div>
+        <div class="service-item">Character Design</div>
+        <div class="service-item">Storyboarding</div>
+      </div>
+    </div>
+
+    <div class="service-group">
+      <h3>🔧 Additional Creative Services</h3>
+      <div class="service-grid">
+        <div class="service-item">UI/UX Prototyping</div>
+        <div class="service-item">3D Product Visualization</div>
+        <div class="service-item">Game Asset Pipelines</div>
+        <div class="service-item">Custom Art Direction</div>
+        <div class="service-item">Portfolio Consulting</div>
+        <div class="service-item">Multimedia Content Creation</div>
+      </div>
+    </div>
+
+    <!-- What I Offer Section -->
+    <section id="what-i-offer">
+      <h2>What I Offer</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <img src="icons/branding.svg" alt="Branding Icon">
+          <h3>Branding & Identity</h3>
+          <p>Logos, business cards, full branding systems, and strong corporate identities.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/3d.svg" alt="3D Icon">
+          <h3>3D Modeling & Animation</h3>
+          <p>Props, environments, characters, and polished turntable-ready work.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/vfx.svg" alt="VFX Icon">
+          <h3>VFX & Motion Graphics</h3>
+          <p>Cinematic motion graphics, effects, and stylized storytelling elements.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/illustration.svg" alt="Illustration Icon">
+          <h3>Illustration & Comics</h3>
+          <p>Storyboards, comic art, and custom illustrations tailored to your vision.</p>
+        </div>
+        <div class="service-card">
+          <img src="icons/video.svg" alt="Video Icon">
+          <h3>Video Editing</h3>
+          <p>Slick edits for trailers, promotions, social campaigns, and more.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
