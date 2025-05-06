@@ -5,6 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JM | Graphic Design Portfolio</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .portfolio-page {
+      max-width: 1200px;
+      margin: 4em auto;
+      padding: 0 1em;
+    }
+
+    .portfolio-page h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .portfolio-page p {
+      text-align: center;
+      color: #aaa;
+      max-width: 700px;
+      margin: 0 auto 3em;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2em;
+    }
+
+    .category-card {
+      background-color: rgba(30, 30, 30, 0.95);
+      border: 1px solid #00e6e6;
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.1);
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 14px rgba(0, 255, 255, 0.5);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #00e6e6;
+    }
+
+    .category-card h3 {
+      font-size: 1.3rem;
+      padding: 1rem 1rem 0 1rem;
+      font-family: 'Playfair Display', serif;
+      color: #00e6e6;
+    }
+
+    .category-card p {
+      padding: 0 1rem 1rem 1rem;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -25,19 +90,19 @@
 
     <div class="category-grid">
       <div class="category-card">
-        <img src="../assets/graphic-design/poster.jpg" alt="Poster Design">
+        <img src="../assets/graphic/poster.png" alt="Poster Design">
         <h3>Poster Design</h3>
         <p>Large-format print advertising for a film festival, using strong typography and contrast.</p>
       </div>
 
       <div class="category-card">
-        <img src="../assets/graphic-design/logo.jpg" alt="Logo Design">
+        <img src="../assets/graphic/logo.png" alt="Logo Design">
         <h3>Logo Design</h3>
         <p>Custom wordmark and symbol for a tech startup, designed to scale across digital platforms.</p>
       </div>
 
       <div class="category-card">
-        <img src="../assets/graphic-design/social.jpg" alt="Social Templates">
+        <img src="../assets/graphic/social.png" alt="Social Templates">
         <h3>Social Media Templates</h3>
         <p>Instagram and LinkedIn graphic sets that reflect consistent branding and visual hierarchy.</p>
       </div>

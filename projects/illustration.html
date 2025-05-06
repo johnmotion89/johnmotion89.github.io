@@ -5,6 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JM | Illustration Portfolio</title>
   <link rel="stylesheet" href="../style.css" />
+  <style>
+    .portfolio-page {
+      max-width: 1200px;
+      margin: 4em auto;
+      padding: 0 1em;
+    }
+
+    .portfolio-page h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .portfolio-page p {
+      text-align: center;
+      color: #aaa;
+      max-width: 700px;
+      margin: 0 auto 3em;
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2em;
+    }
+
+    .category-card {
+      background-color: rgba(30, 30, 30, 0.95);
+      border: 1px solid #00e6e6;
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.1);
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 14px rgba(0, 255, 255, 0.5);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #00e6e6;
+    }
+
+    .category-card h3 {
+      font-size: 1.3rem;
+      padding: 1rem 1rem 0 1rem;
+      font-family: 'Playfair Display', serif;
+      color: #00e6e6;
+    }
+
+    .category-card p {
+      padding: 0 1rem 1rem 1rem;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -21,25 +86,25 @@
 
   <main class="portfolio-page">
     <h1>Illustration</h1>
-    <p>Hand-drawn, digital, and stylized art with emotion, clarity, and strong storytelling—ranging from comics to standalone concepts.</p>
+    <p>Hand-drawn, digital, and stylized art with emotion, clarity, and strong storytelling—ranging from comics to concept design.</p>
 
     <div class="category-grid">
       <div class="category-card">
-        <img src="../assets/illustrations/xftg.jpg" alt="Comic Sample">
-        <h3>Comic Panel</h3>
-        <p>Page from a graphic novel exploring tension and action through sequential art.</p>
+        <img src="../assets/illustrations/comic.png" alt="Comic Page">
+        <h3>Comic Page</h3>
+        <p>Sequential art exploring tension and pacing in a short original story.</p>
       </div>
 
       <div class="category-card">
-        <img src="../assets/illustrations/portrait.jpg" alt="Character Portrait">
-        <h3>Character Portrait</h3>
-        <p>Stylized illustration focusing on color mood, expression, and design.</p>
+        <img src="../assets/illustrations/character.png" alt="Character Concept">
+        <h3>Character Concept</h3>
+        <p>Design sheet and emotional expression breakdown for a fantasy-themed heroine.</p>
       </div>
 
       <div class="category-card">
-        <img src="../assets/illustrations/concept-art.jpg" alt="Concept Illustration">
-        <h3>Concept Art</h3>
-        <p>Environment concept developed for a fantasy-themed game prototype.</p>
+        <img src="../assets/illustrations/painterly.png" alt="Painterly Piece">
+        <h3>Painterly Piece</h3>
+        <p>Digital painting using soft shading techniques and dramatic lighting.</p>
       </div>
     </div>
   </main>
@@ -49,3 +114,4 @@
   </footer>
 </body>
 </html>
+
