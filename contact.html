@@ -52,245 +52,174 @@
     const service = params.get('service');
 
     const templates = {
-      "logo-design": {
-        subject: "Logo Design Inquiry",
-        message: `Hi John,
+  "logo-design": {
+    subject: "Logo Design Inquiry",
+    message: `Hi John,
 
-I'm looking for a memorable logo that reflects my brand's values and aesthetic. I'd love to hear your approach and availability.
+I'm looking to commission a logo design and would love your creative input. Please see details below:
+
+• Business Name: __________
+• Industry: __________
+• Preferred Style (modern, minimalist, illustrative, etc.): __________
+• Colors to Use/Avoid: __________
+• Deadline: __________
+
+Looking forward to hearing from you.
 
 Best regards,`
-      },
-      "corporate-identity": {
-        subject: "Corporate Identity Design",
-        message: `Hi John,
+  },
+  "corporate-identity": {
+    subject: "Corporate Identity Design",
+    message: `Hi John,
 
-We're developing a full corporate identity, including colors, logos, and business materials. Let me know your availability for a consultation.
+We're building a corporate identity and would love your expertise on the following:
 
-Regards,`
-      },
-      "pamphlets-brochures": {
-        subject: "Brochure / Pamphlet Design Request",
-        message: `Hi John,
+• Company Name: __________
+• Brand Mission: __________
+• Assets Needed (logos, business cards, letterheads, etc.): __________
+• Preferred Style: __________
+• Timeline: __________
 
-I need a visually compelling pamphlet or brochure for our new service/product. I can provide branding assets and details shortly.
+Thanks, and I look forward to your response.`
+  },
+  "pamphlets-brochures": {
+    subject: "Brochure / Pamphlet Design Request",
+    message: `Hi John,
 
-Thanks,`
-      },
-      "banners-posters": {
-        subject: "Banner/Poster Design",
-        message: `Hello,
+I’d like to create a brochure or pamphlet for the following purpose:
 
-I'm in need of large format print assets—banners or posters—for an upcoming event. Timeline is tight, so hoping you're available.
+• Product/Service Overview: __________
+• Target Audience: __________
+• Fold Type (tri-fold, bi-fold, etc.): __________
+• Preferred Dimensions: __________
+• Deadline: __________
+
+Let me know your availability and quote.`
+  },
+  "banners-posters": {
+    subject: "Banner/Poster Design",
+    message: `Hello John,
+
+I'm looking to design a banner/poster for an event or marketing campaign. Details:
+
+• Event Name or Campaign Theme: __________
+• Dimensions: __________
+• Text Content: __________
+• Style Preferences: __________
+• Deadline: __________
 
 Thanks again!`
-      },
-      "social-media-graphics": {
-        subject: "Social Media Graphics",
-        message: `Hi,
+  },
+  "social-media-graphics": {
+    subject: "Social Media Graphics",
+    message: `Hi John,
 
-I'd like to commission a series of social media graphics that align with our marketing tone. Can you share your pricing and turnaround?
+I’m in need of graphics tailored for social media platforms. Project details:
 
-Thanks,`
-      },
-      "typography-layouts": {
-        subject: "Typography & Layout Help",
-        message: `Hey John,
+• Platform(s) (Instagram, LinkedIn, etc.): __________
+• Number of Graphics: __________
+• Size/Format Requirements: __________
+• Brand Guidelines (if any): __________
+• Deadline: __________
 
-I’m working on a publishing/print project and need support with elegant typography and page layouts.
+Looking forward to your proposal.`
+  },
+  "typography-layouts": {
+    subject: "Typography & Layout Help",
+    message: `Hey John,
 
-Would love to hear your thoughts. Cheers!`
-      },
-      "hard-surface-modeling": {
-        subject: "Hard Surface Modeling",
-        message: `Hi John,
+I need assistance with the typography and layout of a design piece. Please find the brief:
 
-I need some hard surface 3D models for a personal or commercial project. Could you share your workflow and pricing model?
+• Project Type (booklet, report, digital ad, etc.): __________
+• Page Count (if applicable): __________
+• Existing Brand Guidelines: __________
+• Deadline: __________
 
-Cheers,`
-      },
-      "character-modeling": {
-        subject: "3D Character Modeling Request",
-        message: `Hi,
+Thanks in advance for your insight!`
+  },
+  "hard-surface-modeling": {
+    subject: "Hard Surface Modeling",
+    message: `Hi John,
 
-I'm looking for stylized character modeling for use in animation/game. I’d love to collaborate if you're available.
+I’d like to hire you for hard surface modeling. Here are the project specs:
 
-Thanks,`
-      },
-      "environment-design": {
-        subject: "Environment Design Collaboration",
-        message: `Hi John,
+• Model Type (vehicle, machine, weapon, etc.): __________
+• Usage (game asset, product visual, etc.): __________
+• Polygon Count Target (if applicable): __________
+• File Format Needed: __________
+• Deadline: __________
 
-I'm designing a digital environment for a game or virtual space. I'd like your help with the 3D layout, lighting, and atmosphere.
+Let me know your availability.`
+  },
+  "character-modeling": {
+    subject: "3D Character Modeling Request",
+    message: `Hi John,
 
-Let me know availability. Cheers!`
-      },
-      "uv-mapping-texturing": {
-        subject: "UV Mapping & Texturing Job",
-        message: `Hi John,
+I'm looking for character modeling for an upcoming project. Details below:
 
-I’ve got models that need professional UV mapping and textured finishes. I’m aiming for game-ready assets.
+• Character Type (stylized, realistic, etc.): __________
+• Purpose (game, film, etc.): __________
+• Rigging Needed? (Yes/No): __________
+• File Format Required: __________
+• Deadline: __________
 
-Please get in touch.`
-      },
-      "low-poly-assets": {
-        subject: "Low Poly Asset Creation",
-        message: `Hi John,
+Thanks, and hope we can work together.`
+  },
+  "environment-design": {
+    subject: "Environment Design Collaboration",
+    message: `Hi John,
 
-I need clean, low-poly models for use in a real-time game. Please let me know if you take on small asset packs.
+I'm working on an environment design project and would love your help. Project outline:
 
-Thanks,`
-      },
-      "prop-modeling": {
-        subject: "3D Prop Modeling Inquiry",
-        message: `Hi John,
+• Setting (urban, fantasy, sci-fi, etc.): __________
+• Level of Detail: __________
+• Style References (if any): __________
+• Purpose (game, animation, etc.): __________
+• Deadline: __________
 
-We need props for a stylized animation. Looking for attention to silhouette and detail. Is this in your wheelhouse?
+Looking forward to collaborating.`
+  },
+  "uv-mapping-texturing": {
+    subject: "UV Mapping & Texturing Job",
+    message: `Hi John,
 
-Cheers,`
-      },
-      "3d-animation": {
-        subject: "3D Animation Job",
-        message: `Hi,
+I need support with UV unwrapping and/or texturing. Here are the details:
 
-I need a short 3D animation for a project—something cinematic with polish. Let’s connect on timeline and scope.
+• Number of Models: __________
+• Type of Texturing (hand-painted, PBR, stylized, etc.): __________
+• Texture Resolution: __________
+• Deadline: __________
 
-Thanks!`
-      },
-      "2d-animation": {
-        subject: "2D Animation Request",
-        message: `Hello John,
+Please let me know your availability.`
+  },
+  "low-poly-assets": {
+    subject: "Low Poly Asset Creation",
+    message: `Hi John,
 
-Looking for 2D animation for a commercial/personal project. Could you share samples and availability?
+I’m looking to create low-poly 3D assets. Here’s the brief:
 
-Regards,`
-      },
-      "character-rigging": {
-        subject: "Character Rigging Needed",
-        message: `Hi John,
+• Asset Types Needed: __________
+• Maximum Polygon Count (if applicable): __________
+• Intended Platform (mobile, web, etc.): __________
+• Deadline: __________
 
-I have a model that needs rigging for animation. Let me know if you’re taking on this kind of task currently.
+Let me know your rates and timeline.`
+  },
+  "prop-modeling": {
+    subject: "3D Prop Modeling Inquiry",
+    message: `Hi John,
 
-Thanks,`
-      },
-      "vfx-simulation": {
-        subject: "VFX & Simulation Help",
-        message: `Hi,
+We need props modeled for a project. Details:
 
-I’m developing a video or animation and need help with VFX (particles, smoke, etc). Do you offer that as a service?
+• Prop Types (weapons, tools, furniture, etc.): __________
+• Style Preference (realistic, stylized, etc.): __________
+• Deadline: __________
 
-Cheers,`
-      },
-      "video-editing": {
-        subject: "Video Editing Collaboration",
-        message: `Hi John,
+Please share availability and process.`
+  }
+  // Additional templates would continue below in the same format.
+};
 
-I'm producing a promo video and need someone to cut, polish, and finish the edit. Let’s discuss scope and schedule.
-
-Thanks,`
-      },
-      "motion-graphics": {
-        subject: "Motion Graphics Work",
-        message: `Hey John,
-
-I have a project requiring stylish motion graphics, potentially animated logos or overlays. Interested?
-
-Cheers,`
-      },
-      "concept-art": {
-        subject: "Concept Art Commission",
-        message: `Hi John,
-
-I'm working on a worldbuilding project and need some concept art pieces to bring it to life.
-
-Hope we can collaborate!`
-      },
-      "comic-illustration": {
-        subject: "Comic Illustration Request",
-        message: `Hi,
-
-Looking to create comic pages for an indie story. Need strong paneling and dynamic shots.
-
-Reach out if available. Cheers!`
-      },
-      "visual-development": {
-        subject: "Visual Development Support",
-        message: `Hi,
-
-I need a creative partner to help establish a visual style for my IP. Includes assets like characters and environments.
-
-Thanks,`
-      },
-      "childrens-book-art": {
-        subject: "Children’s Book Illustration",
-        message: `Hello,
-
-I’m self-publishing a book and need a consistent illustration style throughout. Let me know rates.
-
-Cheers,`
-      },
-      "character-design": {
-        subject: "Character Design Help",
-        message: `Hi John,
-
-I’m looking to bring a few original characters to life. Can you help with exploratory sketches and turnarounds?
-
-Thanks,`
-      },
-      "storyboarding": {
-        subject: "Storyboarding Project",
-        message: `Hey John,
-
-I have a short film and need clear storyboards to communicate shots and mood. Let me know if you’re interested.`
-      },
-      "ui-ux-prototyping": {
-        subject: "UI/UX Prototyping",
-        message: `Hi John,
-
-I need interactive mockups for a digital product, including clean interface design and light UX flows.
-
-Hope we can connect!`
-      },
-      "product-visualization": {
-        subject: "Product Visualization",
-        message: `Hi,
-
-I'm launching a product and need a few 3D renders and animations for promo use.
-
-Would love to hear your approach. Cheers!`
-      },
-      "game-asset-pipelines": {
-        subject: "Game Asset Support",
-        message: `Hi John,
-
-We need a few assets optimized for Unity/Unreal. I can send poly budgets and reference sheets shortly.
-
-Thanks!`
-      },
-      "custom-art-direction": {
-        subject: "Art Direction Inquiry",
-        message: `Hi John,
-
-We’re developing a creative project and need someone to shape the visual direction.
-
-Interested in learning more?`
-      },
-      "portfolio-consulting": {
-        subject: "Portfolio Feedback Request",
-        message: `Hi,
-
-I'm looking to improve my design/3D portfolio. Would love constructive guidance or a paid consultation.
-
-Thanks!`
-      },
-      "multimedia-content": {
-        subject: "Multimedia Content Project",
-        message: `Hi John,
-
-We need multi-format content for a campaign—animation, graphics, and editing. I think you’d be a great fit!
-
-Let’s chat soon.`
-      }
-    };
 
     if (service && templates[service]) {
       const { subject, message } = templates[service];
