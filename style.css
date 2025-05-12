@@ -366,3 +366,33 @@ footer {
   box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
   color: #00ffff;
 }
+.tools-used-logos {
+  text-align: center;
+  padding: 4em 1em 2em;
+}
+
+.tools-used-logos h3 {
+  color: #00e6e6;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.tool-logo-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.tool-logo-row img {
+  height: 60px;
+  max-width: 100px;
+  object-fit: contain;
+  opacity: 0.85;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.tool-logo-row img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
