@@ -131,7 +131,7 @@ nav a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(10, 10, 10, 0.6);
+  background: rgba(10, 10, 10, 0.85); /* More opaque */
   z-index: -1;
 }
 
@@ -467,8 +467,11 @@ footer {
 }
 
 .card-link img {
-  width: 50px;
+  width: 80px;       /* Increased from 50px */
   height: auto;
   display: block;
-  margin-bottom: 1em;
+  margin: 0 auto 1em;
+  opacity: 1;
+  filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.2));
 }
+
