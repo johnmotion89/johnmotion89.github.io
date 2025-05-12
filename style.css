@@ -431,3 +431,44 @@ footer {
   object-fit: cover;
   height: 160px;
 }
+.what-i-offer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2em;
+  margin-top: 2em;
+}
+
+.card-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(30, 30, 30, 0.95);
+  border: 1px solid #00e6e6;
+  border-radius: 10px;
+  padding: 1.5em;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.1);
+}
+
+.card-link:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.3);
+}
+
+.card-link h3 {
+  color: #00e6e6;
+  font-size: 1.2rem;
+  margin: 0.8em 0 0.3em;
+}
+
+.card-link p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.card-link img {
+  width: 50px;
+  height: auto;
+  display: block;
+  margin-bottom: 1em;
+}
