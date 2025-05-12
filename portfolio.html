@@ -1,130 +1,71 @@
+<!-- portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JM | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Motion | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    body {
-      background-color: #111;
-      color: #f5f5f5;
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1em 2em;
-      background-color: #121212;
-      border-bottom: 2px solid #00bfa6;
-    }
-
-    .logo {
-      font-size: 1.8em;
-      font-weight: 700;
-      color: #00e6e6;
-      font-family: 'Playfair Display', serif;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5em;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: #f5f5f5;
-      font-weight: 500;
-      transition: color 0.2s ease;
-    }
-
-    nav ul li a:hover,
-    nav ul li a.active {
-      color: #00e6e6;
-    }
-
-    .portfolio-container {
+    .portfolio-section {
+      margin: 3em auto;
       max-width: 1200px;
-      margin: 0 auto;
-      padding: 3rem 1rem;
+      padding: 0 2em;
     }
 
-    .portfolio-header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .portfolio-header h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-      font-family: 'Playfair Display', serif;
-    }
-
-    .portfolio-header p {
-      font-size: 1.1rem;
-      color: #ccc;
+    .portfolio-section h2 {
+      font-size: 1.8rem;
+      color: #00f2f2;
+      margin-bottom: 0.5em;
+      border-bottom: 1px solid #00e6e6;
+      padding-bottom: 0.3em;
     }
 
     .portfolio-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2em;
+      margin-top: 1em;
     }
 
-    .portfolio-card {
-      display: flex;
-      flex-direction: column;
-      background-color: #1c1c1c;
+    .portfolio-entry {
+      background-color: rgba(20, 20, 20, 0.85);
       border: 1px solid #00e6e6;
       border-radius: 10px;
-      overflow: hidden;
-      text-decoration: none;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      color: inherit;
+      padding: 1em;
+      max-width: 300px;
+      color: #fff;
+      flex: 1 1 280px;
     }
 
-    .portfolio-card:hover {
-      transform: scale(1.03);
-      box-shadow: 0 0 14px rgba(0, 255, 255, 0.3);
-    }
-
-    .portfolio-card img {
+    .portfolio-entry img {
       width: 100%;
-      height: 180px;
+      max-height: 180px;
       object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.5em;
     }
 
-    .portfolio-card-content {
-      padding: 1rem;
-    }
-
-    .portfolio-card h3 {
-      margin: 0 0 0.5rem;
+    .portfolio-entry h3 {
       font-size: 1.2rem;
       color: #00e6e6;
+      margin: 0.2em 0;
     }
 
-    .portfolio-card p {
-      font-size: 0.9rem;
-      color: #aaa;
+    .portfolio-entry p {
+      font-size: 0.95rem;
+      color: #ccc;
     }
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #888;
-      border-top: 1px solid #222;
-      margin-top: 3rem;
+    .view-all {
+      margin-top: 1em;
+      display: inline-block;
+      color: #00e6e6;
+      font-weight: bold;
+      text-decoration: none;
     }
   </style>
 </head>
-
 <body>
   <header>
     <nav>
@@ -138,49 +79,98 @@
     </nav>
   </header>
 
-  <main class="portfolio-container">
-    <div class="portfolio-header">
-      <h1>Portfolio</h1>
-      <p>Explore a curated collection of my best work across 3D modeling, animation, graphic design, and illustration.</p>
-    </div>
-
-    <div class="portfolio-grid">
-      <a href="projects/3d-models.html" class="portfolio-card">
-        <img src="assets/honey tank/front.jpg" alt="Stylized tank model render">
-        <div class="portfolio-card-content">
-          <h3>3D Models</h3>
-          <p>Hard surface, stylized, and character modeling showcased in full renders and turntables.</p>
+  <main>
+    <section class="portfolio-section">
+      <h2>Branding & Identity</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-entry">
+          <img src="assets/branding/logo1.png" alt="Logo Design">
+          <h3>Modern Fintech Logo</h3>
+          <p>Clean, bold branding for a technology startup.</p>
         </div>
-      </a>
-
-      <a href="projects/animation.html" class="portfolio-card">
-        <img src="assets/animations/robot_side.png" alt="Robot animation side pose">
-        <div class="portfolio-card-content">
-          <h3>Animation</h3>
-          <p>Character performance, action, and cinematic sequences brought to life.</p>
+        <div class="portfolio-entry">
+          <img src="assets/branding/identity1.png" alt="Identity Kit">
+          <h3>Corporate Identity Kit</h3>
+          <p>Full identity including typography, stationery, and signage.</p>
         </div>
-      </a>
+      </div>
+      <a class="view-all" href="branding.html">View All Branding Projects →</a>
+    </section>
 
-      <a href="projects/graphic-design.html" class="portfolio-card">
-        <img src="assets/graphic.png" alt="Graphic design preview">
-        <div class="portfolio-card-content">
-          <h3>Graphic Design</h3>
-          <p>Branding, posters, social graphics, and visual storytelling with bold style.</p>
+    <section class="portfolio-section">
+      <h2>3D Modeling & Animation</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-entry">
+          <img src="assets/3d/honey-tank.png" alt="Tank Model">
+          <h3>Honey Tank</h3>
+          <p>Stylized hand-painted vehicle model rendered in Marmoset.</p>
         </div>
-      </a>
+        <div class="portfolio-entry">
+          <img src="assets/3d/fantasy-sword.png" alt="Fantasy Sword">
+          <h3>Fantasy Fire Hook</h3>
+          <p>Emissive fantasy weapon modeled and lit for showcase.</p>
+        </div>
+      </div>
+      <a class="view-all" href="3d.html">View All 3D Projects →</a>
+    </section>
+	
+	<section class="portfolio-section">
+      <h2>VFX</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-entry">
+          <img src="assets/3d/image" alt="VFX">
+          <h3>TEMP</h3>
+          <p>Description.</p>
+        </div>
+        <div class="portfolio-entry">
+          <img src="assets/3d/image" alt="VFX">
+          <h3>TEMP</h3>
+          <p>Description.</p>
+        </div>
+      </div>
+      <a class="view-all" href="3d.html">View All VFX →</a>
+    </section>
+	
+	<section class="portfolio-section">
+      <h2>Illustration</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-entry">
+          <img src="assets/3d/image" alt="Illustration">
+          <h3>TEMP</h3>
+          <p>Description.</p>
+        </div>
+        <div class="portfolio-entry">
+          <img src="assets/3d/image" alt="Illustration">
+          <h3>TEMP</h3>
+          <p>Description.</p>
+        </div>
+      </div>
+      <a class="view-all" href="3d.html">View All Illustrations →</a>
+    </section>
 
-      <a href="projects/illustration.html" class="portfolio-card">
-        <img src="assets/illustrations/xftg.jpg" alt="Hand-drawn illustration sample">
-        <div class="portfolio-card-content">
-          <h3>Illustration</h3>
-          <p>Comic pages, character design, and hand-drawn work capturing emotion and energy.</p>
+<section class="portfolio-section">
+      <h2>Video Editing</h2>
+      <div class="portfolio-grid">
+        <div class="portfolio-entry">
+          <img src="assets/3d/image" alt="Video Editing">
+          <h3>TEMP</h3>
+          <p>Description.</p>
         </div>
-      </a>
-    </div>
+        <div class="portfolio-entry">
+          <img src="assets/3d/image" alt="Video Editing">
+          <h3>TEMP</h3>
+          <p>Description.</p>
+        </div>
+      </div>
+      <a class="view-all" href="3d.html">View All Video Editing →</a>
+    </section>
+    
+
   </main>
-
   <footer>
-    <p>&copy; 2025 John Motion. All rights reserved.</p>
+    <p style="text-align:center; padding: 2em; color: #888">&copy; 2025 John Motion. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
+
