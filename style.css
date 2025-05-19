@@ -475,3 +475,44 @@ footer {
   filter: drop-shadow(0 0 4px rgba(0, 255, 255, 0.2));
 }
 
+.estimate-section {
+  margin-top: 4em;
+  padding: 2em;
+  text-align: center;
+  background-color: #121212;
+  border-top: 1px solid #00e6e6;
+}
+
+.estimate-section h2 {
+  font-size: 1.8rem;
+  color: #00e6e6;
+  margin-bottom: 1em;
+}
+
+.estimate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.estimate-card {
+  background-color: rgba(30, 30, 30, 0.95);
+  border: 1px solid #00e6e6;
+  padding: 1.2em;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.08);
+  color: #ddd;
+}
+
+.estimate-card h3 {
+  color: #00e6e6;
+  margin-bottom: 0.5em;
+}
+
+.estimate-note {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 1.5em;
+}
