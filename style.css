@@ -185,7 +185,9 @@ nav a:hover {
   color: #fff;
   text-align: center;
 }
-
+.service-group .service-grid {
+  margin-top: 1.5rem;
+}
 .section-title {
   font-size: 1.8rem;
   color: #fff;
